@@ -1,0 +1,47 @@
+{
+  "name": "ui_api_test_cases",
+  "version": "1.0.0",
+  "description": "Assignment of TestVagrant",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --detectOpenHandles --verbose"
+  },
+  "jest": {
+    "verbose": true,
+    "reporters": [
+      "default",
+      [
+        "./node_modules/jest-html-reporter",
+        {
+          "pageTitle": "Test Report"
+        }
+      ]
+    ]
+  },
+  "jest-html-reporter": {
+    "pageTitle": "Your test suite",
+    "outputPath": "test-report.html",
+    "includeFailureMsg": true
+  },
+  "chromeOptions": {
+    "args": [
+      "--DNS-prefetch-disable"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "chromedriver": "^84.0.1",
+    "jest-junit": "^11.1.0",
+    "lodash": "^4.17.19",
+    "nodemon": "^2.0.4",
+    "path": "^0.12.7",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "superagent": "^5.3.1"
+  },
+  "devDependencies": {
+    "jest": "^26.1.0",
+    "jest-html-reporter": "^3.1.3"
+  }
+}
